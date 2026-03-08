@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposition Enjoy Tacos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #f0f0f0; padding: 30px 20px; color: #1C1C1C; }
+  .page { max-width: 800px; margin: 0 auto; background: white; box-shadow: 0 4px 40px rgba(0,0,0,0.15); }
+
+  .header { background: #5B2D8E; padding: 20px 30px; display: flex; align-items: center; justify-content: space-between; }
+  .header-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: #F5A623; letter-spacing: 2px; }
+  .header-sub { color: rgba(255,255,255,0.85); font-size: 13px; font-weight: 500; margin-top: 4px; }
+
+  .main-title { text-align: center; padding: 24px 30px 10px; border-bottom: 3px solid #5B2D8E; }
+  .main-title h1 { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 3px; color: #0D0D0D; }
+  .main-title p { font-size: 12px; color: #888; margin-top: 5px; }
+
+  .intro { margin: 20px 30px; background: #F4F4F4; border-left: 4px solid #5B2D8E; padding: 14px 18px; font-size: 13px; line-height: 1.7; color: #333; }
+
+  .section-title { background: #0D0D0D; color: white; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 10px 30px; margin-top: 24px; }
+
+  .pack { margin: 0 30px 16px; border: 1px solid #eee; }
+  .pack-header { background: #1C1C1C; color: white; padding: 12px 16px; display: flex; justify-content: space-between; align-items: center; }
+  .pack-header.featured { background: #5B2D8E; }
+  .pack-name { font-weight: 700; font-size: 14px; }
+  .pack-price { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; color: white; }
+  .pack-header.featured .pack-price { color: #F5A623; }
+
+  .pack-body { padding: 12px 16px; background: #fafafa; font-size: 13px; line-height: 2; }
+  .pack-body.featured { background: #f5f0ff; border: 2px solid #5B2D8E; border-top: none; }
+  .pack-body li { list-style: none; }
+  .pack-body li::before { content: '✔  '; color: #5B2D8E; font-weight: 700; }
+  .pack-body li.time { color: #999; font-style: italic; font-size: 12px; }
+  .pack-body li.time::before { content: '⏱  '; color: #999; }
+
+  .recommended-badge { background: #F5A623; color: #5B2D8E; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px; margin-left: 10px; }
+
+  .table-wrap { margin: 12px 30px 0; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  th { background: #0D0D0D; color: white; padding: 10px 8px; font-weight: 600; text-align: center; }
+  th:first-child { text-align: left; padding-left: 14px; }
+  td { padding: 9px 8px; text-align: center; border-bottom: 1px solid #eee; }
+  td:first-child { text-align: left; padding-left: 14px; font-weight: 500; }
+  tr:nth-child(even) td { background: #fafafa; }
+  .col-featured { background: #f5f0ff !important; color: #5B2D8E; font-weight: 700; border-left: 2px solid #5B2D8E; border-right: 2px solid #5B2D8E; }
+  .check { color: #5B2D8E; font-weight: 700; }
+  .cross { color: #ccc; }
+
+  .argument { margin: 16px 30px; background: #0D0D0D; color: white; padding: 14px 18px; border-left: 4px solid #F5A623; font-size: 13px; line-height: 1.7; }
+
+  .guarantee {
+    margin: 16px 30px 0;
+    background: #fffbea;
+    border: 2px solid #F5A623;
+    border-left: 6px solid #F5A623;
+    border-radius: 4px;
+    padding: 18px 20px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: #1C1C1C;
+  }
+  .guarantee-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #5B2D8E;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .guarantee-note {
+    margin-top: 10px;
+    color: #888;
+    font-size: 11px;
+    font-style: italic;
+  }
+
+  .footer { border-top: 2px solid #5B2D8E; text-align: center; padding: 14px; font-size: 12px; color: #999; margin-top: 20px; }
+
+  @media print { body { background: white; padding: 0; } .page { box-shadow: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="header-title">ENJOY TACOS</div>
+      <div class="header-sub">La Roche-sur-Yon</div>
+    </div>
+    <div style="text-align:right;">
+      <div style="color:white;font-weight:700;font-size:13px;">PROPOSITION DE COLLABORATION</div>
+      <div class="header-sub">Création de contenu · Réseaux sociaux · Visibilité locale</div>
+    </div>
+  </div>
+
+  <div class="main-title">
+    <h1>VOTRE PRÉSENCE EN LIGNE, JE M'EN OCCUPE</h1>
+    <p>Contenu TikTok hebdomadaire · Gestion des réseaux · Google Maps</p>
+  </div>
+
+  <div class="intro">
+    <strong>L'objectif :</strong> faire d'Enjoy Tacos le spot incontournable des jeunes à La Roche-sur-Yon.
+    Chaque semaine, du contenu TikTok percutant pour créer de la visibilité, attirer du passage
+    et construire une vraie communauté locale autour de l'enseigne.
+  </div>
+
+  <div class="section-title">Les 3 formules</div>
+
+  <div class="pack" style="margin-top:16px;">
+    <div class="pack-header">
+      <span class="pack-name">PACK STARTER</span>
+      <span class="pack-price">120 € / mois</span>
+    </div>
+    <ul class="pack-body">
+      <li>Tournage sur place 1x/semaine (environ 1h)</li>
+      <li>Montage de 4 vidéos TikTok/mois (musique tendance, transitions, texte accrocheur)</li>
+      <li>Publication sur mon compte TikTok avec tag Enjoy Tacos</li>
+      <li>Vous repostez sur votre compte → double visibilité immédiate</li>
+      <li class="time">Temps de travail : environ 15h/mois</li>
+    </ul>
+  </div>
+
+  <div class="pack">
+    <div class="pack-header">
+      <span class="pack-name">PACK ESSENTIEL</span>
+      <span class="pack-price">280 € / mois</span>
+    </div>
+    <ul class="pack-body">
+      <li>Tout le Pack Starter (tournage + 4 vidéos TikTok)</li>
+      <li>Accès direct à votre compte TikTok → je poste moi-même au meilleur moment</li>
+      <li>Légendes optimisées + hashtags locaux ciblés La Roche-sur-Yon</li>
+      <li>Sélection des sons en tendance pour maximiser la portée</li>
+      <li>4 à 6 visuels Canva/mois pour vos stories (offres, ambiance, promotions)</li>
+      <li class="time">Temps de travail : environ 24h/mois</li>
+    </ul>
+  </div>
+
+  <div class="pack">
+    <div class="pack-header featured">
+      <span class="pack-name">PACK VISIBILITÉ TOTALE <span class="recommended-badge">RECOMMANDÉ</span></span>
+      <span class="pack-price">350 € / mois</span>
+    </div>
+    <ul class="pack-body featured">
+      <li>Tout le Pack Essentiel (tournage + vidéos + gestion TikTok + visuels)</li>
+      <li>Revendication et optimisation de votre fiche Google Maps (photos, description, horaires)</li>
+      <li>Réponse aux avis Google chaque semaine → meilleure réputation locale</li>
+      <li>Surveillance mensuelle de votre fiche pour rester au top des recherches locales</li>
+      <li class="time">Temps de travail : environ 30h/mois</li>
+    </ul>
+  </div>
+
+  <div class="section-title">Comparatif des formules</div>
+  <div class="table-wrap" style="margin-top:12px;">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Starter<br>120 €/mois</th>
+          <th>Essentiel<br>280 €/mois</th>
+          <th style="background:#5B2D8E;">Visibilité Totale<br>350 €/mois</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>4 vidéos TikTok/mois</td><td class="check">✔</td><td class="check">✔</td><td class="col-featured">✔</td></tr>
+        <tr><td>Tournage hebdomadaire</td><td class="check">✔</td><td class="check">✔</td><td class="col-featured">✔</td></tr>
+        <tr><td>Légendes & hashtags</td><td class="cross">✘</td><td class="check">✔</td><td class="col-featured">✔</td></tr>
+        <tr><td>Visuels Canva (stories)</td><td class="cross">✘</td><td class="check">✔</td><td class="col-featured">✔</td></tr>
+        <tr><td>Fiche Google optimisée</td><td class="cross">✘</td><td class="cross">✘</td><td class="col-featured">✔</td></tr>
+        <tr><td>Réponse aux avis Google</td><td class="cross">✘</td><td class="cross">✘</td><td class="col-featured">✔</td></tr>
+        <tr><td>Surveillance Google Maps</td><td class="cross">✘</td><td class="cross">✘</td><td class="col-featured">✔</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="argument">
+    <strong>Pour seulement 70 € de plus</strong> que le Pack Essentiel, le Pack Visibilité Totale inclut
+    la gestion complète de votre Google Maps — un levier puissant pour capter les clients
+    qui cherchent "tacos La Roche" sur Google chaque jour.
+  </div>
+
+  <!-- GARANTIE -->
+  <div class="section-title">Garantie remboursement</div>
+  <div class="guarantee">
+    <div class="guarantee-title">GARANTIE 10 000 VUES OU REMBOURSEMENT INTEGRAL</div>
+    Pour toute formule souscrite, si <strong>au moins une de vos vidéos TikTok</strong> ne dépasse pas
+    <strong>10 000 vues minimum</strong> dans les 30 premiers jours de collaboration,
+    vous êtes remboursé de <strong>l'intégralité du montant payé</strong> — sans condition,
+    sans justification, sans délai.
+    <div class="guarantee-note">
+      Cette garantie s'applique à toutes les formules (Starter, Essentiel, Visibilité Totale)
+      et est valable dès le premier mois de collaboration.
+    </div>
+  </div>
+
+  <div class="footer">
+    Disponible dès cette semaine · Basé à La Roche-sur-Yon · Démarrage immédiat possible
+  </div>
+
+</div>
+</body>
+</html>
